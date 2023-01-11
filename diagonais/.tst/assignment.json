@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "#- type: script\n#  name: design tests\n#  script: python design_tests.py {}\n\n- input: |\n    3\n  name: triangulo\n  output: |\n    3 lados => 0 diagonais\n\n# public file\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Diagonais\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6361364253638656,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 6361364253638656,
+  "key": "6361364253638656",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Carolina\n    10\n  name: exemplo\n  output: |\n    Nome? Valor da letra (R$)? Preço final: R$ 80.00\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Calcula Nome\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5802159578808320,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5802159578808320,
+  "key": "5802159578808320",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

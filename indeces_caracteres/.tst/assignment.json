@@ -1,0 +1,39 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    ola mundo\n    aso\n  output: |\n    2\n    -1\n    0 8\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Índices de caracteres\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2021-08-22T16:27:48Z",
+        "_author": "matheus.victor.pereira@ccc.ufcg.edu.br",
+        "_ip": "177.70.189.224",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "# Universidade Federal de Campina Grande\n# Ciência da Computação\n# Prof: Wilkerson, Jorge e Dalton\n# Matheus Victor Pereira - 120111309\n# \n#Questão: Índices de caracteres\n\n\n\nsequencia = input()\nbusca = input()\n\nfor letra in range(len(busca)):\n    cont = \"\"\n\n    for i in range(len(sequencia)):\n        \n        \n        if i == 0 and len(busca) == 1:\n            if busca[letra] == sequencia[i]:\n                cont = cont + str(i)\n\n        elif i == 0:\n            if busca[letra] == sequencia[i]:\n                cont = cont + str(i) + \" \"\n\n        elif i == (len(sequencia)-1):\n            if busca[letra] == sequencia[i]:\n                cont = cont + str(i)\n        else:\n            if busca[letra] == sequencia[i]:\n                cont = cont + str(i)\n\n    if cont == \"\":\n        print(\"-1\")\n    else:\n        print(cont)\n",
+        "hash": "e875678ca1fc544d1ad00ab7767f761227dc3a01",
+        "mode": "rw",
+        "name": "indices.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5880312816992256,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5880312816992256,
+  "key": "5880312816992256",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

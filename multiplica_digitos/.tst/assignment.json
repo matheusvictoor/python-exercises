@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: \"a1bc2x3yy45z\\n\"\n  output: \"15\\n\"\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Multiplica Dígitos Ímpares\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5864901199265792,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5864901199265792,
+  "key": "5864901199265792",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

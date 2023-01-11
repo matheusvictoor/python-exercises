@@ -1,0 +1,7 @@
+- input: |
+    asa
+    controle
+    Janela
+    ***
+  output: |
+    Palavras: 2

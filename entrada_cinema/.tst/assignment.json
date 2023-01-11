@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    2021\n    2011\n  name: test_name\n  output: |\n    Ano atual? Ano de nascimento? Idade calculada: 10 anos\n    Entrada proibida para menores de 14 anos\n\n- input: |\n    2021\n    2006\n    n\n  name: test_name\n  output: |\n    Ano atual? Ano de nascimento? Idade calculada: 15 anos\n    Com os pais? Entrada proibida para menores de 16 anos sem os pais\n\n- input: |\n    2021\n    2007\n    n\n  name: test_name\n  output: |\n    Ano atual? Ano de nascimento? Idade calculada: 14 anos\n    Com os pais? Entrada proibida para menores de 16 anos sem os pais\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Entra no Cinema\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5224066107572224,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5224066107572224,
+  "key": "5224066107572224",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

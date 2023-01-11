@@ -1,0 +1,2 @@
+- input: "a1bc2x3yy45z\n"
+  output: "15\n"

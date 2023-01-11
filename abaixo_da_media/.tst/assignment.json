@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global remove_abaixo_media\n        undertest = __import__(module)\n        remove_abaixo_media = getattr(undertest, 'remove_abaixo_media', None)\n\n    def test_exemplo1(self):\n        l1 = [1, 1, 1, 1]\n        remove_abaixo_media(l1)\n        assert l1 == [1, 1, 1, 1]\n\n    def test_exemplo2(self):\n        l1 = [1, 1, 1, -1, 1]\n        remove_abaixo_media(l1)\n        assert l1 == [1, 1, 1, 1]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Remove abaixo da média\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6752635572977664,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 6752635572977664,
+  "key": "6752635572977664",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

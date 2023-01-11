@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "# coding: utf-8\n\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\neh_primo = getattr(undertest, 'eh_primo', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert eh_primo(3) == True\n\n    def test_exemplo_2(self):\n        assert eh_primo(5) == True\n\n    def test_exemplo_3(self):\n        assert eh_primo(10) == False\n\n    def test_exemplo_4(self):\n        assert eh_primo(11) == True\n\n    def test_exemplo_5(self):\n        assert eh_primo(15) == False\n        \n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"É primo?\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5886234234716160,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5886234234716160,
+  "key": "5886234234716160",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,25 @@
+- input: |
+    2021
+    2011
+  name: test_name
+  output: |
+    Ano atual? Ano de nascimento? Idade calculada: 10 anos
+    Entrada proibida para menores de 14 anos
+
+- input: |
+    2021
+    2006
+    n
+  name: test_name
+  output: |
+    Ano atual? Ano de nascimento? Idade calculada: 15 anos
+    Com os pais? Entrada proibida para menores de 16 anos sem os pais
+
+- input: |
+    2021
+    2007
+    n
+  name: test_name
+  output: |
+    Ano atual? Ano de nascimento? Idade calculada: 14 anos
+    Com os pais? Entrada proibida para menores de 16 anos sem os pais

@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Rebeca\n    30\n    50\n    20\n    Simone\n    50\n    10\n    10\n  output: |\n    Rebeca venceu com nota 35.0.\n\n- input: |\n    Rebeca\n    30\n    50\n    20\n    Simone\n    60\n    10\n    20\n  output: |\n    Simone venceu (no critério de desempate) com nota 35.0.\n\n- input: |\n    Marcos\n    10\n    20\n    30\n    Tiago\n    15\n    30\n    10\n  output: |\n    Marcos e Tiago venceram com nota 20.0.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Define o Vencedor\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6368983525621760,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 6368983525621760,
+  "key": "6368983525621760",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

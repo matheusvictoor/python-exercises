@@ -1,0 +1,19 @@
+- input: |
+    16
+    Adriano da Silva
+    11144
+  output: |
+    Idade: Nome: Documento: ===
+    Nome: Adriano da Silva
+    Idade: 16
+    Documento: 11144
+    Preço: 10.00
+
+- input: |
+    30
+  output: |
+    Idade: ===
+    Nome: anônimo
+    Idade: 30
+    Documento: 
+    Preço: 20.00

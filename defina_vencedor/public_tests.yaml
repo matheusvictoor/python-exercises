@@ -1,0 +1,36 @@
+- input: |
+    Rebeca
+    30
+    50
+    20
+    Simone
+    50
+    10
+    10
+  output: |
+    Rebeca venceu com nota 35.0.
+
+- input: |
+    Rebeca
+    30
+    50
+    20
+    Simone
+    60
+    10
+    20
+  output: |
+    Simone venceu (no critério de desempate) com nota 35.0.
+
+- input: |
+    Marcos
+    10
+    20
+    30
+    Tiago
+    15
+    30
+    10
+  output: |
+    Marcos e Tiago venceram com nota 20.0.
+

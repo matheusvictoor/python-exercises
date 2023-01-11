@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    16\n    Adriano da Silva\n    11144\n  output: |\n    Idade: Nome: Documento: ===\n    Nome: Adriano da Silva\n    Idade: 16\n    Documento: 11144\n    Preço: 10.00\n\n- input: |\n    30\n  output: |\n    Idade: ===\n    Nome: anônimo\n    Idade: 30\n    Documento: \n    Preço: 20.00\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Calculo do Ingresso\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5262654509678592,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5262654509678592,
+  "key": "5262654509678592",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

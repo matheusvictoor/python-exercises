@@ -1,0 +1,45 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nencontra_menores = getattr(undertest, 'encontra_menores', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n      assert encontra_menores(3, [2,1,1,1,1,1]) == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Encontra Menores\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2021-09-25T20:46:04Z",
+        "_author": "matheus.victor.pereira@ccc.ufcg.edu.br",
+        "_ip": "177.70.185.164",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "# Universidade Federal de Campina Grande - UFCG\n# Wilkerson, Jorge e Dalton\n# Matheus Victor Pereira - 120111309\n#\n# Questão: Encontra menores\n\n\n\ndef encontra_menores(num, sequencia):\n    for i in range(len(sequencia)-1):\n        if sequencia[i] < num:\n            return sequencia[i]\n    return -1\n\n\nlista1 = [100,200,300,400]\nlista2 = [15, 12, 4, 9, 10]\nassert encontra_menores(100, lista1) == -1\nassert encontra_menores(10, lista2) == 4\n",
+        "hash": "83fc21effc1ccb17f7122c0a3ed88241ea754d92",
+        "mode": "rw",
+        "name": "encontra_menores.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5797159096025088,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5797159096025088,
+  "key": "5797159096025088",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

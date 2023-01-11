@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ntradutor_morse = getattr(undertest, 'tradutor_morse', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n       assert tradutor_morse(['.--.', '-.--', '-', '....', '---', '-.']) == 'python'\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Tradutor Morse\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5874604369248256,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 5874604369248256,
+  "key": "5874604369248256",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}

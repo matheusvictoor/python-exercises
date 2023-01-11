@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global concatena_simetricos\n        undertest = __import__(module)\n        concatena_simetricos = getattr(undertest, 'concatena_simetricos', None)\n\n    def test_exemplo_1(self):\n        assert concatena_simetricos([\"bola\", \"tv\", \"zebra\", \"arara\"]) == [\"ararabola\", \"tvzebra\"]\n\n    def test_exmplo_2(self):\n        assert concatena_simetricos([\"ab\", \"cd\", \"ef\", \"gh\", \"ij\"]) == [\"abij\", \"cdgh\", \"ef\"]\n\n    def test_exemplo_3(self):\n        assert concatena_simetricos([\"cd\", \"gh\", \"ck\"]) == [\"cdck\", \"gh\"]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"public_tests.py\",\n    \"acceptance_tests.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Concatena Simétricos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6448365963313152,
+    "index": null,
+    "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+  },
+  "iid": 6448365963313152,
+  "key": "6448365963313152",
+  "site": "prog1",
+  "user": "matheus.victor.pereira@ccc.ufcg.edu.br"
+}
