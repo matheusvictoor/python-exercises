@@ -21,4 +21,4 @@ python nome-do-exercicio.py
 
 ### Observação
 
-Alguns exercícios podem precisar de pacotes ou bibliotecas adicionais para funcionar. As instruções específicas para cada exercício estão disponíveis dentro da pasta do mesmo.
+Alguns exercícios podem precisar de pacotes ou bibliotecas adicionais para funcionar.
